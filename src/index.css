@@ -141,8 +141,6 @@ header nav ul li a:hover {
   transform: scale(1.2);
 }
 
-
-
 input {
   font-size: 1rem;
   padding: 0.25rem;
@@ -289,6 +287,45 @@ textarea {
 }
 
   /* WORK SECTION STYLES END */
+
+  /* RESUME STYLES */
+
+  .resume ul {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .resume ul li a {
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 2vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .resume {
+    width: 85%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .resume h1 {
+    font-size: 4vw;
+  }
+  
+  .resume-item {
+    margin: 5px
+  }
+  
+  .contact-item label {
+    font-size: large;
+  }
+
+  /* RESUME STYLES END */
+
 
 .navActive a {
     color: green;
