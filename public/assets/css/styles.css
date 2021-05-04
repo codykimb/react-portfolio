@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../images/flower-collage-2-min.jpg");
+    background-size: 100%;
+}
+
+.section-title {
+    font-size: 7vw;
+    color: black;
+    text-shadow: 3px 3px whitesmoke;
+    background-color: rgba(245, 245, 245, 0.482);
+    border-radius: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0px auto 35px auto;
+    width: 40%;
+    transition: 1000ms;
+}
+
+.section-title:hover {
+    color: whitesmoke;
+    text-shadow: 3px 3px black;
+    background-color: rgba(245, 245, 245, 0);
+}
+
+/* HEADER STYLE */
+header {
+    padding: 20px 25px;
+    background: linear-gradient(45deg,#292b31, #000000);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
+}
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: whitesmoke;
+    margin: 0;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+header a {
+    text-decoration: none;
+    color: whitesmoke;
+    text-shadow: 3px 3px #000000;
+
+}
+header nav  {
+margin: 7px 0px;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a {
+    margin: 5px;
+    border-radius: 2px;
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 2.5vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: 500ms ease-in;
+}
+header nav ul li a:hover {
+    background-color: whitesmoke;
+    color: black;
+    text-shadow: none;
+}
+    /* HEADER STYLE END */
+
+    /* HERO STYLE */
+
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.hero h3{
+    position: absolute;
+    top: 80px;
+    left: 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, .5)
+}
+
+.hero img {
+    height: 320px;
+    border: solid 1px whitesmoke;
+    border-radius: 10%;
+    padding: 2px;
+    margin: 10px;
+}
+    /* HERO STLYE END */
+
+    /* CONTACT SECTION STYLES */
+
+.contact-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.contact-section ul li a {
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 2vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+    border: 1px solid whitesmoke;
+    border-radius: 10%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: whitesmoke;
+    font-size: 30px;
+    margin: 5px;
+    padding: 5px;
+    transition: 1000ms ease;
+}
+
+.btn:hover {
+    border: 1px solid rgba(245, 245, 245, 0);
+    background-color: whitesmoke;
+    color: black;
+    transform: scale(1.2);
+}
+    /* CONTACT SECTION STYLES END */
+ 
+    /* ABOUT SECTION STYLES */
+
+.about-section {
+    padding: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px auto;
+    width: 75%;
+    /* background-color: var(--primary-color) */
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 1000ms ease;
+}
+
+.about-section:hover {
+    border: 1px solid rgba(245, 245, 245, 0);
+    background-color: rgb(0, 0, 0, 1);
+    transform: scale(1.1);
+}
+
+.about-section p {
+    flex-wrap: wrap;
+}
+    /* ABOUT SECTION STYLES END */
+
+    /* WORK SECTION STYLES */
+
+.work-section {
+    padding: 20px;
+    /* background-color: var(--primary-color) */
+    width: 80%;
+    margin: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-gap: 20px;
+    grid-auto-flow: dense;
+    height: 350px;
+  }
+
+.grid-item {
+    display: flex;
+    justify-content: left;
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 20px;  
+    color: white;
+    align-items: center;
+    /* opacity: .8; */
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-item:hover {
+    opacity: .7;
+    transition: .5s;
+    transform: scale(1.1);
+}
+
+.grid-item h4 {
+    background-color: rgba(0, 0, 0, .5);
+    text-align: left;
+}
+
+ .item-1 {
+    grid-column: span 6;
+    grid-row: span 6;
+    background-image: url("../images/now-playing-screenshot.png");
+ }
+
+ .item-2 {
+    grid-column: span 3;
+    grid-row: span 3;
+    background-image: url("../images/cinema.jpg");
+ }
+ 
+ .item-3 {
+    grid-column: span 3;
+    grid-row: span 3;
+    background-image: url("../images/tech-blog-homepage.png");
+ }
+ .item-4 {
+        grid-column: span 3;
+        grid-row: span 3;
+        background-image: url("../images/bbr-logo.jpg");
+     }
+ 
+ .item-5 {
+    grid-column: span 3;
+    grid-row: span 3;
+    background-image: url("https://f4.bcbits.com/img/0014733625_20.jpg");
+ }
+
+ .item-6 {
+    grid-column: span 3;
+    grid-row: span 3;
+    background-image: url("../images/work-day-1.png");
+ }
+
+    /* WORK SECTION STYLES END */
+
+ @media only screen and (max-width: 600px) {
+
+    .about-section {
+        background-color: rgba(0, 0, 0, 0.95);
+    }
+
+    .item-1 {
+        grid-column: span 9;
+        grid-row: span 9;
+     }
+    
+     .item-2 {
+        grid-column: span 9;
+        grid-row: span 9;
+     }
+     
+     .item-3 {
+        grid-column: span 9;
+        grid-row: span 9;
+     }
+     .item-4 {
+        grid-column: span 9;
+        grid-row: span 9;
+         }
+     
+     .item-5 {
+        grid-column: span 9;
+        grid-row: span 9;
+     }
+    
+     .item-6 {
+        grid-column: span 9;
+        grid-row: span 9;
+     }
+
+  }

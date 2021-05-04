@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Nav from './components/Nav';
+import About from './components/About';
+import Portfolio from './components/Portfolio';
 import './App.css';
 
 function App() {
+
+  const [categories] = useState([
+    { name: 'ABOUT' },
+    { name: 'PORTFOLIO' },
+    { name: 'CONTACT' },
+    { name: 'RESUME' }
+  ]);
+
+  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
+      <Nav
+      categories={categories}
+      setCurrentCategory={setCurrentCategory}
+      currentCategory={currentCategory}
+      ></Nav>
+      <main>
+        <About></About>
+        <Portfolio></Portfolio>
+      </main>
     </div>
   );
 }

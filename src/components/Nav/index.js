@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-function Nav() {
+function Nav(props) {
 
-    function categorySelected() {
-        console.log("sup")
-      }
+    const {
+        categories = [],
+        setCurrentCategory,
+        currentCategory,
+      } = props;
+
+    useEffect(() => {
+    document.title = currentCategory.name;
+    }, [currentCategory]);
 
   return (
     <header>
@@ -13,18 +19,19 @@ function Nav() {
         </h1>
         <nav>
             <ul>
-                <li name = "ABOUT ME" onClick={categorySelected}>
-                    <a>ABOUT ME</a>
+                {categories.map((category) => (
+                <li className={`${
+                    currentCategory.name === category.name && 'navActive'
+                    }`} key={category.name}>
+                <a
+                    onClick={() => {
+                    setCurrentCategory(category)
+                    }}
+                >
+                    {category.name}
+                </a>
                 </li>
-                <li name = "PORTFOLIO" onClick={categorySelected}>
-                    <a>PORTFOLIO</a>
-                </li>
-                <li name = "CONTACT" onClick={categorySelected}>
-                    <a>CONTACT</a>
-                </li>
-                <li name = "RESUME" onClick={categorySelected}>
-                    <a>RESUME</a>
-                </li>
+                ))}
             </ul>
         </nav>
     </header>
