@@ -3,6 +3,8 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
+import Footer from './components/Footer';
+
 // import './App.css';
 
 function App() {
@@ -26,9 +28,10 @@ function App() {
       ></Nav>
       <main>
         <About></About>
-        <Portfolio></Portfolio>
         <ContactForm></ContactForm>
+        <Portfolio></Portfolio>
       </main>
+      <Footer></Footer>
     </div>
   );
 }

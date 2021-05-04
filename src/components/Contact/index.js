@@ -4,8 +4,8 @@ import { validateEmail } from '../../utils/helpers';
 function ContactForm() {
 
     const [errorMessage, setErrorMessage] = useState('');
-    const { name, email, message } = formState;
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+    const { name, email, message } = formState;
 
     function handleChange(e) {
         if (e.target.name === 'email') {
@@ -39,17 +39,17 @@ function ContactForm() {
       
     return (
         <section>
-          <h1>Contact me</h1>
           <form id="contact-form" onSubmit={handleSubmit}>
-            <div>
+          <h1>Contact me</h1>
+            <div class="contact-item">
               <label htmlFor="name">Name:</label>
               <input type="text" name="name" defaultValue={name} onChange={handleChange}/>
             </div>
-            <div>
+            <div class="contact-item">
               <label htmlFor="email">Email address:</label>
               <input type="email" defaultValue={email} name="email" onChange={handleChange} />
             </div>
-            <div>
+            <div class="contact-item">
               <label htmlFor="message">Message:</label>
               <textarea name="message" defaultValue={message} onChange={handleChange} rows="5" />
             </div>
@@ -58,7 +58,7 @@ function ContactForm() {
                     <p className="error-text">{errorMessage}</p>
                 </div>
             )}
-            <button type="submit">Submit</button>
+            <button class="btn" type="submit">Submit</button>
           </form>
         </section>
         );

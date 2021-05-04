@@ -9,6 +9,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   /* background-image: url("../images/flower-collage-2-min.jpg"); */
   background-size: 100%;
+  background-color: darkgreen;
 }
 
 .section-title {
@@ -138,6 +139,49 @@ header nav ul li a:hover {
   background-color: whitesmoke;
   color: black;
   transform: scale(1.2);
+}
+
+
+
+input {
+  font-size: 1rem;
+  padding: 0.25rem;
+  margin: 5px;
+  border: 1px solid var(--dark);
+  outline: none;
+  border-radius: 3px;
+  transition: box-shadow 0.2s;
+}
+
+input:focus {
+  border: 1px solid var(--secondary);
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+}
+
+textarea {
+	width: 600px;
+	height: 120px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+}
+
+#contact-form {
+  width: 85%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact-form h1 {
+  font-size: 4vw;
+}
+
+.contact-item {
+  margin: 5px
+}
+
+.contact-item label {
+  font-size: large;
 }
   /* CONTACT SECTION STYLES END */
 
