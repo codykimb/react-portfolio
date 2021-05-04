@@ -3,7 +3,7 @@ import React from 'react';
 function Resume() {
   return (
     <main>
-        <section class="resume">
+        <section class="resume about-section">
             <h2 class="resume-item">Technical Skills</h2>
             <ul class="resume-item">
                 <li>Languages: JavaScript, jQuery, HTML, CSS, SQL

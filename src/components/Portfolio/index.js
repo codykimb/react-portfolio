@@ -23,7 +23,7 @@ function Portfolio() {
             <a href= "https://codykimb.github.io/work-day-scheduler/" target="_blank" class="grid-item item-6">
                 <h4>Work Day Scheduler</h4>
             </a>
-            <div class="grid-item item-7"></div>
+            {/* <div class="grid-item item-7"></div> */}
         </div>
 
     </section>
