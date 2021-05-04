@@ -7,7 +7,7 @@
 body {
   color: whitesmoke;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url("./assets/flower-collage-2-min.jpg");
+  background-image: url("./assets/images/flower-collage-2-min.jpg");
   background-size: 100%;
   /* background-color: darkgreen; */
 }
@@ -222,8 +222,7 @@ textarea {
 
 .work-section {
   padding: 20px;
-  /* background-color: var(--primary-color) */
-  width: 80%;
+  width: 90%;
   margin: 10px auto;
   border: 1px solid whitesmoke;
   border-radius: 5px;
@@ -237,7 +236,7 @@ textarea {
   grid-template-rows: repeat(9, 1fr);
   grid-gap: 20px;
   grid-auto-flow: dense;
-  height: 350px;
+  height: 500px;
 }
 
 .grid-item {
@@ -254,49 +253,69 @@ textarea {
 }
 
 .grid-item:hover {
-  opacity: .7;
   transition: .5s;
   transform: scale(1.1);
 }
 
-.grid-item h4 {
+.grid-item h4, .grid-item h6 {
   background-color: rgba(0, 0, 0, .5);
   text-align: left;
 }
 
+.grid-item a {
+  color: whitesmoke;
+  margin-top: 10px;
+}
+
+.grid-item a:hover {
+  color: pink;
+}
+
 .item-1 {
-  grid-column: span 6;
-  grid-row: span 6;
-  /* background-image: url("../images/now-playing-screenshot.png"); */
+  grid-column: span 5;
+  grid-row: span 4;
+  background-image: url("./assets/images/now-playing-screenshot.png");
 }
 
 .item-2 {
-  grid-column: span 3;
-  grid-row: span 3;
-  /* background-image: url("../images/cinema.jpg"); */
+  grid-column: span 4;
+  grid-row: span 4;
+  background-image: url("./assets/images/cinema.jpg");
 }
 
 .item-3 {
-  grid-column: span 3;
-  grid-row: span 3;
-  /* background-image: url("../images/tech-blog-homepage.png"); */
+  grid-column: span 5;
+  grid-row: span 4;
+  background-image: url("./assets/images/tech-blog-homepage.png");
 }
 .item-4 {
-      grid-column: span 3;
-      grid-row: span 3;
-      /* background-image: url("../images/bbr-logo.jpg"); */
+      grid-column: span 4;
+      grid-row: span 4;
+      background-image: url("./assets/images/photo-port-cover-image.jpeg");
    }
 
 .item-5 {
-  grid-column: span 3;
-  grid-row: span 3;
-  /* background-image: url("https://f4.bcbits.com/img/0014733625_20.jpg"); */
+  grid-column: span 5;
+  grid-row: span 6;
+  background-image: url("./assets/images/budget-tracker.png");
 }
 
 .item-6 {
-  grid-column: span 3;
-  grid-row: span 3;
-  /* background-image: url("../images/work-day-1.png"); */
+  grid-column: span 4;
+  grid-row: span 6;
+  background-image: url("./assets/images/work-day-1.png");
+}
+
+.item-7 {
+  grid-column: span 5;
+  grid-row: span 6;
+  background-image: url("./assets/images/bbr-logo.jpg");
+}
+
+.item-8 {
+grid-column: span 4;
+grid-row: span 6;
+background-image: url("https://f4.bcbits.com/img/0014733625_20.jpg");
 }
 
   /* WORK SECTION STYLES END */
@@ -341,13 +360,13 @@ textarea {
 
 
 .navActive a {
-    color: green;
+    color: pink;
     font-size: 2.5vw;
     font-weight: 800;
   }
 
 .navActive a:hover {
-    color: green !important;
+    color: pink !important;
   }
 
 @media only screen and (max-width: 600px) {
