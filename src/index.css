@@ -356,6 +356,11 @@ background-image: url("https://f4.bcbits.com/img/0014733625_20.jpg");
     font-size: large;
   }
 
+  .dl-link {
+    margin-left: 5px;
+    color: pink;
+  }
+
   /* RESUME STYLES END */
 
 
@@ -373,6 +378,10 @@ background-image: url("https://f4.bcbits.com/img/0014733625_20.jpg");
 
   .about-section {
       background-color: rgba(0, 0, 0, 0.95);
+  }
+
+  .grid-container {
+    height: 1200px;
   }
 
   .item-1 {
