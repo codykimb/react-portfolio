@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
-import './App.css';
+import ContactForm from './components/Contact';
+// import './App.css';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
       <main>
         <About></About>
         <Portfolio></Portfolio>
+        <ContactForm></ContactForm>
       </main>
     </div>
   );
