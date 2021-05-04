@@ -53,7 +53,7 @@ function Portfolio() {
                         <span> | </span>
                         <a href= "https://github.com/codykimb/PWA-budget-tracker" target="_blank">REPOSITORY</a>
                     </h6>
-                </div>
+                </div> 
             </div>
             <div class="grid-item item-6">
                 <div class="grid title">
