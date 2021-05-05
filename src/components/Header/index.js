@@ -11,7 +11,7 @@ function Header(props) {
     return (
         <header>
             <h1>
-                <a href="/">CODY KIMBELL</a>
+                <a href="https://codykimb.github.io/react-portfolio/">CODY KIMBELL</a>
             </h1>
             <Nav
             setCurrentCategory={setCurrentCategory}
