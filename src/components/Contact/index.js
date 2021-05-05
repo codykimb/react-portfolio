@@ -13,13 +13,13 @@ function ContactForm() {
             console.log(isValid);
             // isValid conditional statement
             if (!isValid) {
-                setErrorMessage('Your email is invalid.');
+                setErrorMessage('your email is invalid...');
             } else {
                 setErrorMessage('');
             }
         } else {
             if (!e.target.value.length) {
-              setErrorMessage(`${e.target.name} is required.`);
+              setErrorMessage(`${e.target.name} is required..`);
             } else {
               setErrorMessage('');
             }
@@ -43,15 +43,16 @@ function ContactForm() {
           <h1>Contact me</h1>
             <div class="contact-item">
               <label htmlFor="name">Name:</label>
-              <input type="text" name="name" defaultValue={name} onChange={handleChange}/>
+              <input type="text" name="name" defaultValue={name} onBlur={handleChange}/>
             </div>
             <div class="contact-item">
               <label htmlFor="email">Email address:</label>
-              <input type="email" defaultValue={email} name="email" onChange={handleChange} />
+              <input type="email" defaultValue={email} name="email" onBlur={handleChange} />
             </div>
             <div class="contact-item">
-              <label htmlFor="message">Message:</label>
-              <textarea name="message" defaultValue={message} onChange={handleChange} rows="5" />
+              <label class="textarea-label" htmlFor="message">Message:</label>
+              <br/>
+              <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" />
             </div>
             {errorMessage && (
                 <div>

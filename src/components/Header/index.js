@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from 'react';
 import Nav from "../Nav";
 
 function Header() {
     
+    const [currentCategory, setCurrentCategory] = useState("ABOUT");
+    
     return (
         <header>
-            <Nav></Nav>
+            <Nav
+            setCurrentCategory={setCurrentCategory}
+            currentCategory={currentCategory}
+            ></Nav>
         </header>
     );
 }
