@@ -39,20 +39,20 @@ function ContactForm() {
       
     return (
         <section class="contact-form-section">
-          <form id="contact-form" onSubmit={handleSubmit}>
+          <form id="contact-form" action="mailto:codykimbell@gmail.com" target="_blank" method="POST" enctype="multipart/form-data">
           <h1>Contact me</h1>
             <div class="contact-item">
-              <label htmlFor="name">Name:</label>
-              <input type="text" name="name" defaultValue={name} onBlur={handleChange}/>
+              <label htmlFor="Name">Name:</label>
+              <input type="text" name="Name" defaultValue={name} onBlur={handleChange}/>
             </div>
             <div class="contact-item">
-              <label htmlFor="email">Email address:</label>
-              <input type="email" defaultValue={email} name="email" onBlur={handleChange} />
+              <label htmlFor="Email">Email address:</label>
+              <input type="Email" defaultValue={email} name="email" onBlur={handleChange} />
             </div>
             <div class="contact-item">
-              <label class="textarea-label" htmlFor="message">Message:</label>
+              <label class="textarea-label" htmlFor="Message">Message:</label>
               <br/>
-              <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" />
+              <textarea name="Message" defaultValue={message} onBlur={handleChange} rows="5" />
             </div>
             {errorMessage && (
                 <div>
