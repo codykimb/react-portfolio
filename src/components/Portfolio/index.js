@@ -1,10 +1,12 @@
 import React from 'react';
+import Project from '../Project'
 
 function Portfolio() {
 
   return (
     <section class="work-section" id="work">
-        <div class="grid-container">
+        <Project></Project>
+        {/* <div class="grid-container">
             <div class="grid-item item-1">
                 <div class="grid title">
                     <h4>Now Playing: Music App</h4>
@@ -49,7 +51,7 @@ function Portfolio() {
                 <div class="grid title">
                     <h4>Budget Tracker</h4>
                     <h6>
-                        <a href= "https://damp-earth-27271.herokuapp.com/ (Links to an external site.)" target="_blank" >DEPLOYED</a>
+                        <a href= "https://damp-earth-27271.herokuapp.com/" target="_blank" >DEPLOYED</a>
                         <span> | </span>
                         <a href= "https://github.com/codykimb/PWA-budget-tracker" target="_blank">REPOSITORY</a>
                     </h6>
@@ -81,8 +83,7 @@ function Portfolio() {
                     </h6>
                 </div>
             </div>
-            {/* <div class="grid-item item-7"></div> */}
-        </div>
+        </div> */}
 
     </section>
   );

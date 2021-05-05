@@ -237,7 +237,7 @@ textarea {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(9, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(9, 1fr);
   grid-gap: 20px;
   grid-auto-flow: dense;
@@ -255,6 +255,8 @@ textarea {
   /* opacity: .8; */
   background-size: cover;
   background-position: center;
+  grid-column: span 5;
+  grid-row: span 3;
 }
 
 .grid-item:hover {
@@ -277,49 +279,33 @@ textarea {
 }
 
 .item-1 {
-  grid-column: span 5;
-  grid-row: span 4;
   background-image: url("./assets/images/now-playing-screenshot.png");
 }
 
 .item-2 {
-  grid-column: span 4;
-  grid-row: span 4;
   background-image: url("./assets/images/cinema.jpg");
 }
 
 .item-3 {
-  grid-column: span 5;
-  grid-row: span 4;
   background-image: url("./assets/images/tech-blog-homepage.png");
 }
 .item-4 {
-      grid-column: span 4;
-      grid-row: span 4;
       background-image: url("./assets/images/photo-port-cover-image.jpeg");
    }
 
 .item-5 {
-  grid-column: span 5;
-  grid-row: span 6;
   background-image: url("./assets/images/budget-tracker.png");
 }
 
 .item-6 {
-  grid-column: span 4;
-  grid-row: span 6;
   background-image: url("./assets/images/work-day-1.png");
 }
 
 .item-7 {
-  grid-column: span 5;
-  grid-row: span 6;
   background-image: url("./assets/images/bbr-logo.jpg");
 }
 
 .item-8 {
-grid-column: span 4;
-grid-row: span 6;
 background-image: url("https://f4.bcbits.com/img/0014733625_20.jpg");
 }
 

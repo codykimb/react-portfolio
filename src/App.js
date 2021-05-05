@@ -4,6 +4,7 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
 import Resume from './components/Resume'
+import Project from './components/Project'
 import Footer from './components/Footer';
 // import './App.css';
 
