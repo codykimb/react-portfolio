@@ -44,11 +44,13 @@ const Project = () => {
     //   name: 'Bluebonnet Records',
     //   deployed: "https://www.bluebonnet-records.com/",
     //   repository: '',
+    //   class: "grid-item item-7"
     // },
     // {
     //   name: 'Music / Production',
     //   deployed: "https://www.codykimb.com/",
     //   repository: '',
+    //   class: "grid-item item-8"
     // }
   ]);
 

@@ -103,6 +103,11 @@ header nav ul li a:hover {
   border-radius: 10%;
   padding: 2px;
   margin: 10px;
+  transition: 1000ms ease;
+}
+
+.hero img:hover {
+  transform: scale(1.2);
 }
   /* HERO STLYE END */
 
@@ -160,6 +165,7 @@ input {
   outline: none;
   border-radius: 3px;
   transition: box-shadow 0.2s;
+  box-shadow: 4px 4px 0px black;
 }
 
 input:focus {
@@ -173,6 +179,8 @@ textarea {
 	border: 3px solid #cccccc;
 	padding: 5px;
   box-sizing: border-box;
+  margin: 5px 0px;
+  box-shadow: 4px 4px 0px black;
 
 }
 
@@ -185,6 +193,7 @@ textarea {
 
 #contact-form h1 {
   font-size: 4vw;
+  text-shadow: 4px 4px 0px black;
 }
 
 .contact-item {
@@ -193,6 +202,7 @@ textarea {
 
 .contact-item label {
   font-size: large;
+  text-shadow: 4px 4px 0px black;
 }
 
   /* CONTACT SECTION STYLES END */
@@ -321,13 +331,6 @@ background-image: url("https://f4.bcbits.com/img/0014733625_20.jpg");
     list-style: none;
   }
   
-  .resume ul li a {
-    padding: 10px 15px;
-    font-weight: bold;
-    font-size: 2vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-  
   .resume {
     width: 85%;
     max-width: 800px;
@@ -335,8 +338,9 @@ background-image: url("https://f4.bcbits.com/img/0014733625_20.jpg");
     margin-right: auto;
   }
   
-  .resume h1 {
+  .resume h2 {
     font-size: 4vw;
+    text-shadow: 4px 4px 0px black;
   }
   
   .resume-item {
@@ -350,6 +354,11 @@ background-image: url("https://f4.bcbits.com/img/0014733625_20.jpg");
   .dl-link {
     margin-left: 5px;
     color: pink;
+    text-shadow: 4px 4px 0px black;
+  }
+
+  .dl-link:hover {
+    color: whitesmoke;
   }
 
   /* RESUME STYLES END */
