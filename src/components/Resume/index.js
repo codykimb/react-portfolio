@@ -1,10 +1,11 @@
 import React from 'react';
+import resume from '../../assets/docs/Coding-Resume.pdf'
 
 function Resume() {
   return (
     <main>
         <section class="resume about-section">
-            <a href="/assets/docs/Coding Resume.pdf" download>
+            <a href={resume} download>
               <h5 class="dl-link">Full Resume Download</h5>
             </a>
             <h2 class="resume-item">Technical Skills</h2>
