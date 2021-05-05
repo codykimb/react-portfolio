@@ -1,10 +1,11 @@
 import React from 'react';
+import photo from '../../assets/images/cody.jpg'
 
 function About() {
   return (
     <div>
         <section class="hero">
-            <img src="/assets/images/cody.jpg" alt="Cody"/>
+            <img src={photo} alt="Cody"/>
         </section>
 
         <section class= "about-section" id="about-me">
