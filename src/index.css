@@ -381,36 +381,12 @@ background-image: url("https://f4.bcbits.com/img/0014733625_20.jpg");
   }
 
   .grid-container {
-    height: 1200px;
+    height: 1500px;
   }
 
-  .item-1 {
-      grid-column: span 9;
-      grid-row: span 9;
-   }
-  
-   .item-2 {
-      grid-column: span 9;
-      grid-row: span 9;
-   }
-   
-   .item-3 {
-      grid-column: span 9;
-      grid-row: span 9;
-   }
-   .item-4 {
-      grid-column: span 9;
-      grid-row: span 9;
-       }
-   
-   .item-5 {
-      grid-column: span 9;
-      grid-row: span 9;
-   }
-  
-   .item-6 {
-      grid-column: span 9;
-      grid-row: span 9;
+  .grid-item {
+      grid-column: span 10;
+      grid-row: span 12;
    }
 
 }
