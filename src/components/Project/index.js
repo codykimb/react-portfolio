@@ -34,10 +34,16 @@ const Project = () => {
       repository: 'https://github.com/codykimb/PWA-budget-tracker',
       class: "grid-item item-5"
     },
+    // {
+    //   name: 'Work Day Scheduler',
+    //   deployed: "https://codykimb.github.io/work-day-scheduler/",
+    //   repository: "https://github.com/drewvena/now-playing",
+    //   class: "grid-item item-6"
+    // },
     {
-      name: 'Work Day Scheduler',
-      deployed: "https://codykimb.github.io/work-day-scheduler/",
-      repository: "https://github.com/drewvena/now-playing",
+      name: 'Flambot Crop: Shirt Store',
+      deployed: "https://flambot-corp.herokuapp.com/",
+      repository: "https://github.com/drewvena/flambot-corp",
       class: "grid-item item-6"
     },
     // {
