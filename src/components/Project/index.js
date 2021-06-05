@@ -41,7 +41,7 @@ const Project = () => {
     //   class: "grid-item item-6"
     // },
     {
-      name: 'Flambot Crop: Shirt Store',
+      name: 'Flambot Corp: Shirt Store',
       deployed: "https://flambot-corp.herokuapp.com/",
       repository: "https://github.com/drewvena/flambot-corp",
       class: "grid-item item-6"
