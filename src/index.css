@@ -307,8 +307,12 @@ textarea {
   background-image: url("./assets/images/budget-tracker.png");
 }
 
-.item-6 {
+/* .item-6 {
   background-image: url("./assets/images/work-day-1.png");
+} */
+
+.item-6 {
+  background-image: url("https://user-images.githubusercontent.com/69886471/120904419-d843d580-c611-11eb-8c6b-cae06d1cb26f.png");
 }
 
 .item-7 {
